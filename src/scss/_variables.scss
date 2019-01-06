@@ -1,0 +1,7 @@
+@import "_colors";
+$app-theme-primery: mat-palette($app-theme-primery-color);
+$app-theme-accent: mat-palette($app-theme-accent-color);
+// $app-theme-warn: mat-palette($mat-red);
+$primary: mat-color($app-theme-primery);
+$accent: mat-color($app-theme-accent);
+// $warn: mat-color($app-theme-warn);

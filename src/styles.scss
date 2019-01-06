@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~src/scss/app-theme.scss";
+*{
+    box-sizing: border-box;
+}
+html,
+body,
+header,
+h1,
+h2,
+h3,ul,li,p{
+    padding: 0;
+    margin: 0;
+}
+html {
+    height: 100%;
+  }
+  body {
+    min-height: 100%;
+  }
+.container{
+    max-width:1200px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+.center{
+    margin: auto;
+}
+app-popup-input{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    min-width: 260px;
+    max-width: 450px;
+
+}
+.custom-dialog-container .mat-dialog-container {
+    min-width: 260px;
+    max-width: 450px;
+    display:flex;
+    justify-content: center;
+    mat-form-field{
+        flex-grow: 1;
+      min-width: 200px;
+     max-width: 430px;
+    }
+
+ }

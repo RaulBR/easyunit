@@ -1,0 +1,10 @@
+<section class="main-section" > 
+    <mat-card
+     matRipple
+    (click)='openPopup(element)'
+    *ngFor="let element of utilityList">
+       <mat-icon>{{element.icon}}</mat-icon>
+       <p>{{element.desc}}</p>
+       <p>ultima valuare: {{element.lastData}}</p>
+    </mat-card> 
+</section>

@@ -1,0 +1,48 @@
+mat-toolbar-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .toolbar-address {
+    display: flex;
+   
+    @media only screen and (max-width: 400px) {
+      min-width: 300px;
+    }
+
+  }
+
+  .toolbar-dropdown {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 3;
+
+    mat-form-field {
+      min-width: 220px;
+      max-width: 480px;
+      flex-grow: 3;
+    }
+
+    @media only screen and (max-width: 1024px) {
+      mat-form-field {
+        margin: 0 10px;
+      }
+
+      p {
+        display: none;
+      }
+
+    }
+  }
+
+  mat-icon {
+    font-size: 1.5rem;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    height: 100px;
+  }
+}

@@ -1,0 +1,12 @@
+<button
+  mat-button 
+  class="side-meniu-button"
+  *ngFor="let icon of icons"
+  (click)="onClick(icon)">
+    <mat-icon>{{icon.name}}</mat-icon>
+  <div 
+    [ngClass]=" {hide:isDetailed===false}"
+    class = "side-meniu-button__description hide">
+    <p>{{icon.desc}} </p>
+  </div>
+</button> 

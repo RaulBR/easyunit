@@ -1,0 +1,16 @@
+<mat-drawer-container  [hasBackdrop]="false">
+  <mat-drawer mode="side" [opened]="menuProperty" 
+    [ngClass]=" {expand:!isNavSmall} ">
+    <button mat-button (click)="openSideMeniu()">
+      <mat-icon *ngIf="isNavSmall">arrow_right</mat-icon>
+      <mat-icon *ngIf="!isNavSmall">arrow_left</mat-icon>
+    </button>
+    <app-side-nav-meniu></app-side-nav-meniu>
+  </mat-drawer>
+  <mat-drawer-content>
+    <app-homebar></app-homebar>
+
+      <router-outlet></router-outlet>
+   
+  </mat-drawer-content>
+</mat-drawer-container>

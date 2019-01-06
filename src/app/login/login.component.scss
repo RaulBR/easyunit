@@ -1,0 +1,41 @@
+@import "~src/scss/_colors";
+
+.login-container {
+  height: 100vh;
+
+}
+
+mat-card {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  max-width: 300px;
+  max-width: 350px;
+  min-height: 300px;
+  z-index: 3;
+  top: 200px;
+}
+
+form {
+  margin: 16px;
+  max-height: 200px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+
+}
+
+mat-card-actions {
+  margin: 16px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 130px;
+  button {
+    // background: $utillity-color; // $header-color;
+    // color: $main-white;
+    min-height: 40px;
+    width: 100%
+  }
+}

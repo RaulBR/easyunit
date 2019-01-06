@@ -1,0 +1,15 @@
+<mat-toolbar 
+  [ngClass]=" {login:!isLogedin}"
+  color = "primary">
+  <mat-toolbar-row class="container">
+    <div class="logo-container">
+      <a class="header__logo noSelect"></a>
+      <div class="header__logo-name noSelect">
+        <h1>Easy unit</h1>
+      </div>
+    </div>
+    <mat-icon (click)="showMeniu($event)" [ngClass]=" {hide:!isLogedin} ">
+      format_list_bulleted
+    </mat-icon>
+  </mat-toolbar-row>
+</mat-toolbar>

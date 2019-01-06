@@ -1,0 +1,26 @@
+@import "~src/scss/_utilitty";
+  .mat-icon{
+    height: 4rem;
+    width: 4rem;
+    font-size: 3rem;
+    padding: 10px 0 ;
+  }
+  .side-meniu-button{
+    width:100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 16px;
+   
+  }
+  .side-meniu-button__description{
+    display: inline-block;
+     margin: 10px;
+  }
+  @media only screen and (min-width: 1024px) {
+  .hide{
+    display:none;
+  }
+}
+  
+
+ 

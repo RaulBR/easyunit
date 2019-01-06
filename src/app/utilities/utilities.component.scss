@@ -1,0 +1,39 @@
+// @import "~src/scss/_colors";
+@import "~src/scss/_variables";
+.main-section{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 20px 0 ;
+}
+mat-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    margin:10px;
+    flex-grow: 1;
+    min-height: 200px;
+    max-width: 380px;
+    min-width: 300px;
+    background: $utillity-color; 
+    border: 1px solid $utillity-color; 
+    @media only screen and (max-width: 1024px) {
+        max-width: 1000px;
+        flex-grow: 1;
+      }
+      mat-icon{
+        height:4rem;
+        width:4rem;
+        font-size: 4rem;
+        color:$main-white;
+        margin:10px;
+      }
+      p{
+        margin:10px;
+        color:$main-white; 
+      }
+
+}
+
